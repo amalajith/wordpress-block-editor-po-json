@@ -4,6 +4,8 @@
   "description": "Generate jed1.x compatible json files from po files for use in Wordpress Gutenberg block translation",
   "main": "index.js",
   "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/amalajith/wordpress-block-editor-po-json/issues"
   },
-  "homepage": "https://github.com/amalajith/wordpress-block-editor-po-json#readme"
+  "homepage": "https://github.com/amalajith/wordpress-block-editor-po-json#readme",
+  "dependencies": {
+    "cli-color": "^2.0.1",
+    "po2json": "^0.4.5",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
 }
