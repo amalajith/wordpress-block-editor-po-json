@@ -15,7 +15,7 @@
   "author": "Amal Ajith",
   "license": "ISC",
   "bin": {
-    "wordpress-po-json": "./index.js"
+    "wordpress-po-json": "./cli.js"
   },
   "bugs": {
     "url": "https://github.com/amalajith/wordpress-block-editor-po-json/issues"
