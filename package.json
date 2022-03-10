@@ -1,7 +1,7 @@
 {
-  "name": "wordpress-block-editor-po-json",
+  "name": "wordpress-block-editor-po-to-json",
   "version": "1.0.0",
-  "description": "Generate jed1.x compatible json files from po files for use in Wordpress Gutenberg block translation",
+  "description": "Generate JED1.x compatible json files from po files for use in Wordpress Gutenberg block translations and internationalization.",
   "main": "index.js",
   "scripts": {
     "build": "tsc --build",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amalajith/wordpress-block-editor-po-json.git"
+    "url": "git+https://github.com/amalajith/wordpress-block-editor-po-to-json.git"
   },
   "author": "Amal Ajith",
   "license": "ISC",
@@ -19,9 +19,9 @@
   },
   "types": "./build/index.d.ts",
   "bugs": {
-    "url": "https://github.com/amalajith/wordpress-block-editor-po-json/issues"
+    "url": "https://github.com/amalajith/wordpress-block-editor-po-to-json/issues"
   },
-  "homepage": "https://github.com/amalajith/wordpress-block-editor-po-json#readme",
+  "homepage": "https://github.com/amalajith/wordpress-block-editor-po-to-json#readme",
   "dependencies": {
     "cli-color": "^2.0.1",
     "commander": "^9.0.0",

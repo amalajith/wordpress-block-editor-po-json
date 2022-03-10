@@ -19,9 +19,9 @@ the po2json npm package.
 4. Install this package using `npm install --save wp-block-editor-po-to-json`.
 5. Create a new npm script in the package.json scripts section.
 ```aidl
-"scripts": {
-    "build-translation-json": "block-editor-po2json -lf languages -wjh cg-blocks-js"
-},
+    "scripts": {
+        "build-translation-json": "block-editor-po2json -lf languages -wjh cg-blocks-js"
+    },
 ```
 where `-lf` is the path to the language folder `language`
 where `-wjh` is the Wordpress javascript handle used for the blocks compiled `js` file during the `wp_enqueue_script` or `wp_register_script`.
