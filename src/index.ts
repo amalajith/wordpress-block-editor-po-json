@@ -34,9 +34,7 @@ class WordpressBlockEditorPoJsonGenerator {
             this.languagesFolder = config.languagesFolderLocation;
         }
         if(config && config.wordpressJsHandleName) {
-            console.log(config.wordpressJsHandleName);
             this.wpJsHandleName = config.wordpressJsHandleName;
-            console.log(this.wpJsHandleName);
         }
     }
 
