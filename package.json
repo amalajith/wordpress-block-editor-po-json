@@ -12,8 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/amalajith/wordpress-block-editor-po-to-json.git"
   },
-  "author": "Amal Ajith",
-  "license": "ISC",
+  "author": {
+    "name": "Amal Ajith"
+  },
+  "license": "GPL-3.0-or-later",
   "bin": {
     "block-editor-po2json": "./cli.js"
   },
