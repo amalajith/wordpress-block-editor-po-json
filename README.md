@@ -19,7 +19,7 @@ the [po2json](https://www.npmjs.com/package/po2json) npm package.
 2. Use `wp-cli` to generate the `.pot` and `.po` files or add in your `.po` files manually. 
 Your `.po` files should be of the format `{domain}-{locale}.po`, where `domain` is the language domain used to mark the translatable text [`__('some text','mydomain')`] in the project. Example `mydomain-fr_FR.po`.
 3. Do not generate the translation JSON files using `wp-cli`
-4. Install this package using `npm install --save wp-block-editor-po-to-json`.
+4. Install this package using `npm install --save wordpress-block-editor-po-to-json`.
 
 ### CLI Usage
 1. Create a new npm script in the package.json scripts section. Add the following cli command.

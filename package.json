@@ -1,6 +1,6 @@
 {
   "name": "wordpress-block-editor-po-to-json",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate JED1.x compatible json files from po files for use in Wordpress Gutenberg block translations and internationalization.",
   "main": "index.js",
   "scripts": {
@@ -39,6 +39,7 @@
     "Wordpress po file to json file conversion",
     "Wordpress single json file from po file",
     "Wordpress single json file with handle",
-    "JED1.x compatible JSON file"
+    "JED1.x compatible JSON file",
+    "Wordpress block editor json file for translations"
   ]
 }
