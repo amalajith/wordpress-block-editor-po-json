@@ -1,4 +1,2 @@
-const wordpressPo2Json = require('build');
-export default function() {
-    wordpressPo2Json.default();
-}
+const wordpressBlockEditorPo2Json = require('./build');
+module.exports = wordpressBlockEditorPo2Json;
