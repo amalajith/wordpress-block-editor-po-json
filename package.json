@@ -1,0 +1,19 @@
+{
+  "name": "wordpress-block-editor-po-json",
+  "version": "1.0.0",
+  "description": "Generate jed1.x compatible json files from po files for use in Wordpress Gutenberg block translation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amalajith/wordpress-block-editor-po-json.git"
+  },
+  "author": "Amal Ajith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amalajith/wordpress-block-editor-po-json/issues"
+  },
+  "homepage": "https://github.com/amalajith/wordpress-block-editor-po-json#readme"
+}
