@@ -19,7 +19,7 @@ program.version(version)
 
         const languagesFolder = options.languageFolder ? `${appRoot}/${options.languageFolder}` : `${appRoot}/languages`;
         const wpJsHandleName = options.wpJsHandleName ? options.wpJsHandleName : null;
-        const wordpressPo2Json = require('./build');
+
         wordpressPo2Json.generatePoJson({languagesFolderLocation: languagesFolder, wordpressJsHandleName: wpJsHandleName});
 
     })
