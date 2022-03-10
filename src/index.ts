@@ -20,7 +20,7 @@ class WordpressBlockEditorPoJsonGenerator {
 
     // domain: string = 'my-custom-domain';
 
-    languagesFolder: string = `./languages`;
+    languagesFolder: string = `languages`;
 
     poFileExt: '.po' = '.po';
 
@@ -30,8 +30,8 @@ class WordpressBlockEditorPoJsonGenerator {
         // if(config && config.domain) {
         //     this.domain = config.domain;
         // }
-        if(config && config.languagesFolderAbsPath) {
-            this.languagesFolder = config.languagesFolderAbsPath;
+        if(config && config.languagesFolderLocation) {
+            this.languagesFolder = config.languagesFolderLocation;
         }
         if(config && config.wordpressJsHandleName) {
             this.wpJsHandleName = config.wordpressJsHandleName;

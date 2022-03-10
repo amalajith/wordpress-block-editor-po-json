@@ -1,5 +1,5 @@
 export interface Config {
-    languagesFolderAbsPath: string;
+    languagesFolderLocation?: string;
     // domain: string;
-    wordpressJsHandleName: string;
+    wordpressJsHandleName?: string;
 }

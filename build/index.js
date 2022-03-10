@@ -1,16 +1,10 @@
 "use strict";
 /**
- * ======= NodeJS CMD script to generate translations from po files =========
+ * ======= Generate JED1.x compatible translations from po files =========
  *
  * @description
- * This node typescript file will generate the translation json
- * in jed1.x format needed by cg-blocks plugin.
- *
- * This code is written in Typescript. The JS file generated is
- * compiled from Typescript.
- *
- * This file should be kept in the same hierarchy as languages folder
- * since it's relatively indexed in code.
+ * This node script will generate the translation json
+ * in JED1.x format required by Wordpress Gutenberg Block Editor.
  *
  * @author Amal Ajith
  */
@@ -60,7 +54,7 @@ var WordpressBlockEditorPoJsonGenerator = /** @class */ (function () {
     function WordpressBlockEditorPoJsonGenerator(config) {
         var _this = this;
         // domain: string = 'my-custom-domain';
-        this.languagesFolder = "".concat(__dirname, "/languages");
+        this.languagesFolder = "languages";
         this.poFileExt = '.po';
         this.wpJsHandleName = 'wp-js-handle';
         /**
@@ -167,8 +161,8 @@ var WordpressBlockEditorPoJsonGenerator = /** @class */ (function () {
         // if(config && config.domain) {
         //     this.domain = config.domain;
         // }
-        if (config && config.languagesFolderAbsPath) {
-            this.languagesFolder = config.languagesFolderAbsPath;
+        if (config && config.languagesFolderLocation) {
+            this.languagesFolder = config.languagesFolderLocation;
         }
         if (config && config.wordpressJsHandleName) {
             this.wpJsHandleName = config.wordpressJsHandleName;
@@ -193,3 +187,4 @@ var generatePoJson = function (config) { return __awaiter(void 0, void 0, void 0
     });
 }); };
 exports.generatePoJson = generatePoJson;
+//# sourceMappingURL=index.js.map
