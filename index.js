@@ -1,4 +1,4 @@
 const wordpressPo2Json = require('build');
-exports = function() {
+export default function() {
     wordpressPo2Json.default();
 }
