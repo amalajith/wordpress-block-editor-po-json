@@ -24,7 +24,7 @@ the po2json npm package.
     },
 ```
 where `-lf` is the path to the language folder `language`
-where `-wjh` is the Wordpress javascript handle used for the blocks compiled `js` file during the `wp_enqueue_script` or `wp_register_script`.
+and `-wjh` is the Wordpress javascript handle used for the blocks compiled `js` file during the `wp_enqueue_script` or `wp_register_script`.
 6. Generate the translations using the command `npm run build-translation-json`
 
 
