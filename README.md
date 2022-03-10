@@ -20,7 +20,9 @@ the [po2json](https://www.npmjs.com/package/po2json) npm package.
 Your `.po` files should be of the format `{domain}-{locale}.po`, where `domain` is the language domain used to mark the translatable text [`__('some text','mydomain')`] in the project. Example `mydomain-fr_FR.po`.
 3. Do not generate the translation JSON files using `wp-cli`
 4. Install this package using `npm install --save wp-block-editor-po-to-json`.
-5. Create a new npm script in the package.json scripts section.
+
+### CLI Usage
+1. Create a new npm script in the package.json scripts section.
 ```aidl
     'scripts': {
         'build-translation-json': 'block-editor-po2json -lf languages -wjh cg-blocks-js'
@@ -29,8 +31,10 @@ Your `.po` files should be of the format `{domain}-{locale}.po`, where `domain` 
 where `-lf` is the path to the language folder `language`
 and `-wjh` is the Wordpress javascript handle used for the blocks compiled `js` file during the `wp_enqueue_script` or `wp_register_script`.
 
-6. Generate the translations using the command `npm run build-translation-json`
+2. Generate the translations using the command `npm run build-translation-json`
 
+### Script Usage
+In progress.
 
 ### Author
 [Amal Ajith](https://github.com/amalajith)
