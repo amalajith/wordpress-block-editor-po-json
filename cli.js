@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const path = require('path');
-const fs = require('fs');
 const {program} = require("commander");
 const wordpressPo2Json = require("./build");
 const version = require('./package.json').version;
