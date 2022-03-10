@@ -22,16 +22,19 @@ Your `.po` files should be of the format `{domain}-{locale}.po`, where `domain` 
 4. Install this package using `npm install --save wp-block-editor-po-to-json`.
 
 ### CLI Usage
-1. Create a new npm script in the package.json scripts section.
-```aidl
-    'scripts': {
-        'build-translation-json': 'block-editor-po2json -lf languages -wjh cg-blocks-js'
-    },
+1. Create a new npm script in the package.json scripts section. Add the following cli command.
+`'block-editor-po2json -lf languages -wjh wp-blockjs-handle`
+```
+   "scripts" : {
+        "build-translation-json" : "block-editor-po2json -lf languages -wjh wp-blockjs-handle"
+    }
 ```
 where `-lf` is the path to the language folder `language`
 and `-wjh` is the Wordpress javascript handle used for the blocks compiled `js` file during the `wp_enqueue_script` or `wp_register_script`.
 
-2. Generate the translations using the command `npm run build-translation-json`
+2. Generate the translations using the command `npm run build-translation-json`.
+3. You need to ensure that you have set the `wp_set_script_translations()` function after the `wp_enqueue_script` or `wp_register_script`.
+Refer [wp_set_script_translations](https://developer.wordpress.org/reference/functions/wp_set_script_translations/) for more information.
 
 ### Script Usage
 In progress.
