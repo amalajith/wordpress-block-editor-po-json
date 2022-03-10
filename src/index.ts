@@ -20,7 +20,7 @@ class WordpressBlockEditorPoJsonGenerator {
 
     // domain: string = 'my-custom-domain';
 
-    languagesFolder: string = `${__dirname}/languages`;
+    languagesFolder: string = `./languages`;
 
     poFileExt: '.po' = '.po';
 
