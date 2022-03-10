@@ -39,6 +39,7 @@
     "Wordpress po file to json file conversion",
     "Wordpress single json file from po file",
     "Wordpress single json file with handle",
-    "JED1.x compatible JSON file"
+    "JED1.x compatible JSON file",
+    "Wordpress block editor json file for translations"
   ]
 }
