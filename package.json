@@ -1,6 +1,6 @@
 {
   "name": "wordpress-block-editor-po-to-json",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generate JED1.x compatible json files from po files for use in Wordpress Gutenberg block translations and internationalization.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "license": "GPL-3.0-or-later",
   "bin": {
-    "block-editor-po2json": "./cli.js"
+    "wpbepo2json": "./cli.js"
   },
   "types": "./build/index.d.ts",
   "bugs": {
