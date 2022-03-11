@@ -18,15 +18,16 @@ the [po2json](https://www.npmjs.com/package/po2json) npm package.
 1. Create a `languages` folder in the root of your Gutenberg block. 
 2. Use `wp-cli` to generate the `.pot` and `.po` files or add in your `.po` files manually. 
 Your `.po` files should be of the format `{domain}-{locale}.po`, where `domain` is the language domain used to mark the translatable text [`__('some text','mydomain')`] in the project. Example `mydomain-fr_FR.po`.
-3. Do not generate the translation JSON files using `wp-cli`
+For more detailed instructions refer [Wordpress block editor internationlization](https://developer.wordpress.org/block-editor/how-to-guides/internationalization/)
+3. Do not generate the translation JSON files using `wp-cli`, if you have multiple JS files in the block. 
 4. Install this package using `npm install --save wordpress-block-editor-po-to-json`.
 
 ### CLI Usage
 1. Create a new npm script in the package.json scripts section. Add the following cli command.
-`'block-editor-po2json -lf languages -wjh wp-blockjs-handle`
+`'wpbepo2json -lf languages -wjh wp-blockjs-handle`
 ```
    "scripts" : {
-        "build-translation-json" : "block-editor-po2json -lf languages -wjh wp-blockjs-handle"
+        "build-translation-json" : "wpbepo2json -lf languages -wjh wp-blockjs-handle"
     }
 ```
 where `-lf` is the path to the language folder `language`
